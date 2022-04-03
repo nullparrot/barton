@@ -135,6 +135,7 @@ nav a:hover {
 
 .copyright {
   margin-top: auto;
+  padding-bottom: 10px;
   margin-bottom: 0;
   grid-column: 1/4;
   grid-row: 2;
@@ -157,12 +158,24 @@ nav a:hover {
 
 @media screen and (max-width: 550px) { 
   /* beginning of media query */
+      h1{
+        font-size: 1.8em;
+      }
+
+      h3{
+        font-size: 1em;
+      }
+      
+      body{
+        font-size: 16px;
+      }
+  
       nav{
         visibility: hidden;
       }
       .banner img{
         object-fit: cover;
-        height: 300px;
+        height: 250px;
         width: 100%;
       }
       .banner-text {
@@ -178,9 +191,8 @@ nav a:hover {
       }
       
       .footer{
-        height: 50px;
+        height: 80px;
       }
-
 
   /* end of media query */ 
   } 
