@@ -119,12 +119,18 @@ nav a:hover {
   width: 100%;
   margin-bottom: 0;
   padding: 20px 0;
-  background-color: var(--accent1-color);
+  background-color: #fdfdfd;
   height: 150px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   font-family: var(--paragraph-font);
+}
+
+.footer img{
+  grid-column: 2;
+  margin: 0 auto;
+  max-height: 80px;
 }
 
 .copyright {
@@ -146,6 +152,7 @@ nav a:hover {
   width: 80%;
   padding: 2em 10%;
   margin: 0 auto;
+  background-color: var(--accent1-color);
 }
 
 @media screen and (max-width: 550px) { 
