@@ -147,3 +147,30 @@ nav a:hover {
   padding: 2em 10%;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 550px) { 
+  /* beginning of media query */
+      nav{
+        visibility: hidden;
+      }
+      .banner img{
+        object-fit: cover;
+        height: 300px;
+        width: 100%;
+      }
+      .banner-text {
+        position: absolute;
+        width: 100%;
+        top: 0px;
+        left: auto;
+        transform: none;
+      }
+
+      .banner-text p{
+        width: 90%;
+      }
+      
+
+
+  /* end of media query */ 
+  } 
