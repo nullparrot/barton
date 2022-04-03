@@ -1,0 +1,89 @@
+/* Fonts from Google Fonts - more at https://fonts.google.com */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@450&family=Literata:wght@700&display=swap');
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Literata', serif;
+}
+
+#content {
+  max-width: 1200px;
+  margin: 0 auto;
+  background-color: white;
+}
+
+body {
+  background-color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+  background-color: #edeae9;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+/*Navigation*/
+.logo {
+  max-height: 40px;
+  float: left;
+  background-color: #ffc857;
+  padding: 5.01px 15px;
+}
+nav a {
+  color: #362417;
+  text-decoration: none;
+  padding: 11px;
+  display: block;
+}
+
+nav li {
+  margin: auto;
+  width: 100%;
+  text-align: center;
+}
+
+nav ul {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(6em, 1fr));
+  margin: 0;
+  height: 50px;
+  list-style: none;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2em;
+  background-color: #ffc857;
+  padding: 0;
+}
+
+nav a:hover {
+  background-color: #362417;
+  color: #ffc857;
+}
+
+/* Banner Image*/
+.banner {
+  max-width: 100%;
+  margin-bottom: 0;
+}
+
+/* Footer */
+.footer {
+  margin-bottom: 0;
+  padding: 20px;
+  background-color: #9ad5ba;
+  height: 150px;
+  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.copyright {
+  margin-top: auto;
+  margin-bottom: 0;
+  grid-column: 1/4;
+  grid-row: 2;
+}
