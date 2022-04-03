@@ -1,41 +1,66 @@
 /* Fonts from Google Fonts - more at https://fonts.google.com */
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@450&family=Literata:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@450&family=Lora:wght@500&display=swap');
+
+/* https://coolors.co/0f5257-0b3142-f2d492-9c92a3-d6d3f0 */
+
+:root {
+  /* change the values below to your colors from your palette */
+  --primary-color: #D6D3F0;
+  --secondary-color: #FDF8ED;
+  --accent1-color: #9C92A3;
+  --accent2-color: #0B3142;
+  --accent3-color: #0F5257;
+  --bodybackground-color: #F1F0FA;
+
+  /* change the values below to your chosen font(s) */
+  --heading-font: 'Lora', serif;
+  --paragraph-font: 'Open Sans', san-serif;
+}
 
 h1,
 h2,
 h3,
 h4,
 h5 {
-  font-family: 'Literata', serif;
+  font-family: var(--heading-font);
 }
 
 #content {
-  max-width: 1200px;
-  margin: 0 auto;
-  background-color: white;
+  background-color: var(--bodybackground-color);
+  text-align: center;
 }
 
 body {
-  background-color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: --paragraph-font;
   font-size: 18px;
-  background-color: #edeae9;
-  margin-bottom: 0;
+  margin: 0;
+  width: 100%;
 }
 
 img {
   max-width: 100%;
 }
 
-/*Navigation*/
-.logo {
-  max-height: 40px;
-  float: left;
-  background-color: #ffc857;
-  padding: 5.01px 15px;
+/* Banner Image*/
+.banner {
+  max-width: 100%;
+  margin-bottom: 0;
+  position: relative;
 }
+.banner img{
+  filter: brightness(40%);
+}
+
+/*Navigation*/
+nav{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+}
+
 nav a {
-  color: #362417;
+  color: white;
   text-decoration: none;
   padding: 11px;
   display: block;
@@ -45,40 +70,61 @@ nav li {
   margin: auto;
   width: 100%;
   text-align: center;
+  border-right: 2px solid white;
 }
 
 nav ul {
   display: grid;
-  grid-template-columns: repeat(4, minmax(6em, 1fr));
-  margin: 0;
+  max-width: fit-content;
+  margin: .5em 0 .5em auto;
+  grid-template-columns: repeat(3, minmax(6em, 1fr));
   height: 50px;
   list-style: none;
   font-family: "Open Sans", sans-serif;
   font-size: 1.2em;
-  background-color: #ffc857;
   padding: 0;
 }
 
 nav a:hover {
-  background-color: #362417;
-  color: #ffc857;
+  text-decoration: underline;
 }
 
-/* Banner Image*/
-.banner {
-  max-width: 100%;
-  margin-bottom: 0;
+/* Banner text*/
+.banner-text{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+  color: white;
+}
+
+.banner-text p{
+  width: 60%;
+  margin: 0 auto;
+  margin-bottom: 1em;
+}
+
+.banner-button{
+  padding: .5em 1em;
+  background-color: var(--accent3-color);
+  color: white;
+  text-decoration: none;
+  margin: 2em auto;
+  border-radius: 5px;
 }
 
 /* Footer */
 .footer {
+  width: 100%;
   margin-bottom: 0;
-  padding: 20px;
-  background-color: #9ad5ba;
+  padding: 20px 0;
+  background-color: var(--accent1-color);
   height: 150px;
   text-align: center;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
+  font-family: var(--paragraph-font);
 }
 
 .copyright {
@@ -86,4 +132,18 @@ nav a:hover {
   margin-bottom: 0;
   grid-column: 1/4;
   grid-row: 2;
+}
+
+/*Contact Me*/
+#contact{
+  width: 80%;
+  padding: 2em 10%;
+  margin: -5px auto 0;
+  background-color: var(--secondary-color);
+}
+
+#about{
+  width: 80%;
+  padding: 2em 10%;
+  margin: 0 auto;
 }
